@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 /* General styles */
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,13 +15,13 @@ body{
     font-family: 'Lato', sans-serif;
 }
 h1, h2, h3 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase; 
     letter-spacing: 2px;
-    color: #252525
+    color: #252525;
 }
 /*Header*/
-header{
+header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
@@ -30,24 +30,24 @@ header{
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline
+    align-items: baseline;
 }
 header a {
-text-decoration: none;
-color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-#menu{
-    font-size:110%;
+#menu {
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 #menu > li{
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: 1px solid #3a3a3a;
 
 }
 
@@ -60,7 +60,7 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top:100%;
+    top: 100%;
 }
 #nav-toggle:checked~nav {
     display: block;
@@ -70,7 +70,7 @@ nav {
     display: none;
 }
 .nav-toggle-label {
-    font-size: 2rem
+    font-size: 2rem;
 }
 /*main content*/
 main{
@@ -83,14 +83,13 @@ main{
 #hero {
     height: 600px;
     width:100%;
-    background-color: lightgreen;
     background:url("../images/hero-image.webp") no-repeat center center/cover;
     position:relative;
 }
 #cover-text { 
     background-color:rgba(241,109,107.7);
     font-size: 130%;
-    position:absolute;
+    position: absolute;
     bottom: 30px;
     width: 80%;
     min-height: 200px;
@@ -99,6 +98,42 @@ main{
 }
 #cover-text > h2, #cover-text > h3 {
     color: #ffffff;
+
+}
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits p {
+    padding: 0 20px;
+}
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 /*footer*/
@@ -110,7 +145,7 @@ main{
     list-style-type: none;
 }
 #social-networks i {
-    font-size: 60%;
+    font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
@@ -133,14 +168,10 @@ main{
     .nav-toggle-label {
         display: none;
     }
-    #menu > li {
-        padding-left: 1rem;
-    }
-    .nav-toggle-label { display: none;
-    }
+
     #logo {
         font-size: 280%;
-        line-height:75px;
+        line-height: 75px;
         margin: 0 0.5rem;
     }
     /*Main content*/
@@ -151,7 +182,7 @@ main{
     /* Hero */
     #cover-text {
         width: 300px;
-        right: 50px
+        right: 50px;
     }
     /* Large decives (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {
